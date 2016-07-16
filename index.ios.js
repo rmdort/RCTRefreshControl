@@ -1,20 +1,20 @@
 'use strict';
 
-import React from 'react-native';
-const {
-  Component,
+import React, { Component } from 'react';
+
+import {
   StyleSheet,
   Text,
   View,
   ScrollView,
   ListView
-} = React;
+} from 'react-native'
 
 import RNRefreshControl from './RNRefreshControl';
 
 let randId = () => (Math.random() + 1).toString(36).substring(7);
 
-const ELEMENT_ID = randId();
+const ELEMENT_ID = 'RNScrollView';
 
 var style = StyleSheet.create({
   rootView: {
